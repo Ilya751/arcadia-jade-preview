@@ -1,0 +1,189 @@
+/* 1350px breakpoint */
+
+@media (max-width: 1350px) {
+  .vision__container {
+    gap: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .vision__image {
+    width: 50%;
+  }
+
+  .vision__eyebrow {
+    margin-top: 0;
+  }
+
+  .cards__container {
+    padding-top: 4rem;
+    gap: 1rem;
+    min-height: 0;
+  }
+
+  .card,
+  .card__content {
+    height: 35rem;
+  }
+
+  .card__title {
+    padding-top: 0;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .card__text {
+    max-width: 90%;
+    margin-bottom: 0;
+  }
+
+  .card__tag {
+    margin-top: auto;
+  }
+
+  .slogan__container {
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .photo::after {
+    top: 0;
+  }
+
+  .manifesto__text {
+    padding-bottom: 12rem;
+  }
+
+  .footer__container {
+    padding-top: 12rem;
+  }
+
+  .footer__brand {
+    margin-bottom: 120px;
+  }
+}
+
+/* 1100px breakpoint */
+
+@media (max-width: 1100px) {
+  .vision__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision__image {
+    height: auto;
+    width: 100%;
+  }
+
+  .vision__content {
+    text-align: center;
+  }
+
+  .vision__text {
+    max-width: 450px;
+  }
+
+  .manifesto__eyebrow {
+    font-size: 1rem;
+  }
+
+  .manifesto__title {
+    font-size: 2rem;
+  }
+
+  .manifesto__text {
+    font-size: 1rem;
+    padding-bottom: 6rem;
+  }
+
+  .growth__title {
+    font-size: 1.5rem;
+    padding-top: 25rem;
+  }
+
+  .growth__text {
+    font-size: 1rem;
+  }
+
+  .footer__brand {
+    font-size: 4rem;
+  }
+}
+
+/* modile behaviour */
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .card__placeholder {
+    opacity: 0;
+  }
+
+  .card:hover .card__content {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* 800px brealpoint */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header__title {
+    font-size: 4rem;
+    text-align: right;
+  }
+
+  .header__subtitle {
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .header__content {
+    max-width: 377px;
+    margin-left: 0;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
+
+/* 500px breakpoint */
+
+@media (max-width: 500px) {
+  .header__contact {
+    padding: 5px;
+  }
+
+  .logo__img {
+    max-width: 150px;
+  }
+
+  .header__content {
+    max-width: 260px;
+  }
+
+    .header__title {
+    font-size: 2.5rem;
+    text-align: right;
+  }
+
+  .header__subtitle {
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+  .card {
+    min-width: 350px;
+  }
+
+  .slogan__container {
+    height: 320px;
+  }
+}

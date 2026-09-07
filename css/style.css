@@ -147,9 +147,13 @@ a {
 }
 
 .vision__image {
-  width: 53.0625rem;
+  max-width: 53.0625rem;
   height: 33.5625rem;
   aspect-ratio: 117/74;
+}
+
+.vision__image img {
+  width: 100%;
 }
 
 .vision__eyebrow {
@@ -218,7 +222,7 @@ a {
 }
 
 .cards__container {
-  max-width: 1567px;
+  /* max-width: 1567px;
   min-height: 1080px;
   padding-left: 20px;
   padding-right: 20px;
@@ -228,25 +232,50 @@ a {
 
   display: flex;
   justify-content: space-between;
-  gap: 6.63em;
+  gap: 6.63em; */
+  max-width: 1567px;
+  min-height: 1080px;
+  padding: 18.25rem 20px 5.75rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6.63rem;
 }
 
 .card {
-  position: relative;
+  /* position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 43.5rem;
 
   background: rgba(255, 250, 240, 0);
   border: 1px solid rgba(255, 255, 255, 0.6);
 
+  overflow: hidden; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 1 0;
+  min-width: 400px;
+
+  height: 43.5rem;
+
+  background: rgba(255, 250, 240, 0);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   overflow: hidden;
 }
 
 .card__placeholder {
-  padding-top: 15.94rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.75rem;
   opacity: 1;
 }
@@ -350,6 +379,16 @@ a {
   pointer-events: auto;
 }
 
+.card.active .card__placeholder {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card.active .card__content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .slogan {
   background: #000;
 }
@@ -410,6 +449,10 @@ a {
 .photo__container {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .photo::before {
@@ -437,6 +480,9 @@ a {
 }
 
 .photo__image {
+  width: 100%;
+  max-width: 89.7rem;
+  height: auto;
   margin-top: 6.5rem;
   margin-bottom: 14.3rem;
   z-index: 1;
