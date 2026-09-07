@@ -97,6 +97,11 @@ a {
   color: #976a3f;
 }
 
+.header__content {
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
 .header__title {
   color: var(--white);
   max-width: 40.125rem;
@@ -119,14 +124,15 @@ a {
 }
 
 .vision {
-    position: relative;
+  position: relative;
 }
 
 .vision__container {
   position: relative;
-  max-width: 1438px;
+  max-width: 1478px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 10.13rem;
-  margin-bottom: 9.44rem;
   display: flex;
   gap: 2.69rem;
 }
@@ -156,6 +162,7 @@ a {
   letter-spacing: 0.245rem;
   text-transform: uppercase;
   margin-top: 4.06rem;
+  margin-bottom: 0.44rem;
 }
 
 .vision__title {
@@ -166,13 +173,470 @@ a {
   line-height: 100.075%;
   letter-spacing: 0.125rem;
   text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 1.44rem;
 }
 
 .vision__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #fff;
   font-family: "Satoshi", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
   font-weight: 300;
   line-height: 1.4375rem;
+}
+
+.vision__text-item {
+  margin: 0;
+}
+
+.cards {
+  background-image: url(../images/backgrounds/section-2.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 2.37%, #060d0d 74.42%);
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 12rem;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 29.04%, #000 100%);
+}
+
+.cards__container {
+  max-width: 1567px;
+  min-height: 1080px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5.75rem;
+  padding-top: 18.25rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 6.63em;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 43.5rem;
+
+  background: rgba(255, 250, 240, 0);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  overflow: hidden;
+}
+
+.card__placeholder {
+  padding-top: 15.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  opacity: 1;
+}
+
+.card__icon {
+  width: 6.9375rem;
+  height: 7.0625rem;
+  aspect-ratio: 111/113;
+}
+
+.card__name {
+  color: #fffaf0;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 250, 240, 0.8);
+  font-family: Branch;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card__content {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 43.5rem;
+
+  background: #fffaf0;
+}
+
+.card__title {
+  color: #060d0d;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 2.19rem;
+  margin-bottom: 2rem;
+}
+
+.card__image {
+  max-width: 100%;
+  height: 15.75rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.card__text {
+  color: #7d7571;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  max-width: 22.625rem;
+  margin: 0 auto 4.44rem auto;
+}
+
+.card__tag {
+  width: 17.5rem;
+  padding: 12px 0 12px 0;
+  margin: auto auto 2.56rem auto;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fffaf0;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+
+  border-radius: 0.6875rem;
+  background: #976a3f;
+}
+
+.card__placeholder,
+.card__content {
+  transition: opacity 300ms ease-in-out;
+}
+
+.card:hover .card__placeholder {
+  opacity: 0;
+}
+
+.card:hover .card__content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slogan {
+  background: #000;
+}
+
+.slogan__container {
+  height: 39.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan__text {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+.slogan__text.is-visible {
+  opacity: 1;
+}
+
+.slogan__start {
+  color: #fffaf0;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.21%;
+  letter-spacing: 0.15rem;
+  text-transform: capitalize;
+}
+
+.slogan__end {
+  color: #fffaf0;
+  font-family: Branch;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.21%;
+  letter-spacing: 0.225rem;
+  text-transform: capitalize;
+}
+
+.photo {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/backgrounds/section-5.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.photo::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(180deg, #000 50%, transparent 100%);
+  width: 100%;
+  height: 95%;
+
+  z-index: -1;
+}
+
+.photo::after {
+  content: "";
+  width: 100%;
+  height: 14rem;
+  top: 6.5rem;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(354deg, rgba(0, 0, 0, 0) 41.18%, #000 82.24%);
+
+  z-index: 2;
+}
+
+.photo__image {
+  margin-top: 6.5rem;
+  margin-bottom: 14.3rem;
+  z-index: 1;
+}
+
+.manifesto__eyebrow {
+  text-align: center;
+  font-family: Branch;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2.25rem;
+}
+
+.manifesto__title {
+  text-align: center;
+  font-family: Branch;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.075%;
+  letter-spacing: 0.15rem;
+  text-transform: capitalize;
+  margin-bottom: 1.19rem;
+}
+
+.manifesto__text {
+  text-align: center;
+  font-family: Branch;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8125rem;
+  letter-spacing: 0.15rem;
+  padding-bottom: 17.56rem;
+  margin-bottom: 0;
+}
+
+.manifesto__container::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 18%;
+  background: linear-gradient(0deg, #000, transparent);
+}
+
+.growth {
+  position: relative;
+  background-image: url(../images/images/section-6.webp);
+  background-size: cover;
+  background-position: center;
+
+  z-index: 1;
+}
+
+.growth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.5625rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 29%, #060d0d 92.5%);
+}
+
+.growth::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.79%, #060d0d 83.03%);
+
+  z-index: -1;
+}
+
+.growth__title {
+  color: #fffaf0;
+  padding-top: 37.47rem;
+  margin-bottom: 0.86rem;
+  text-align: center;
+  font-family: Branch;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.growth__text {
+  color: #fff;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.105rem;
+  max-width: 81.6rem;
+  margin: 0 auto;
+  padding-bottom: 5.31rem;
+}
+
+.growth__title,
+.growth__text {
+  z-index: 2;
+}
+
+.footer__container {
+  padding-top: 23.94rem;
+  padding-bottom: 5rem;
+}
+
+.footer__brand {
+  color: #fff;
+  text-align: center;
+  font-family: Branch;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 13.06rem;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.84rem;
+}
+
+.footer__social-title {
+  text-align: left;
+}
+
+.footer__phone-title {
+  text-align: right;
+}
+
+.footer__social-title,
+.footer__phone-title {
+  color: #fff;
+  font-family: Branch;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.69rem;
+}
+
+.footer__social-inner {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__social-link {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.footer__phone-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.38rem;
+}
+
+.footer__phone-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.footer__phone-link {
+  font-family: Satoshi;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  position: relative;
+}
+
+.footer__divider {
+  stroke-width: 0.5px;
+  stroke: #fffaf0;
+  margin-bottom: 1rem;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fffaf0;
+  font-family: Satoshi;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/main.js" defer></script>
     <title>Arcadia Jade</title>
   </head>
   <body>
@@ -34,8 +35,10 @@
           </a>
           <a href="#contact" class="header__contact">Connect with Us</a>
         </div>
-        <h1 class="header__title">ARCADIA JADE</h1>
-        <p class="header__subtitle">Reality Can Wait.</p>
+        <div class="header__content">
+          <h1 class="header__title">ARCADIA JADE</h1>
+          <p class="header__subtitle">Reality Can Wait.</p>
+        </div>
       </div>
     </header>
     <section class="vision">
@@ -46,21 +49,31 @@
         <div class="vision__content">
           <p class="vision__eyebrow">Quiet luxury, written in stone.</p>
           <h2 class="vision__title">Founder’s Vision</h2>
-          <p class="vision__text">
-            Arcadia Jade is a covert luxury environment.<br />
-            We believe that true luxury should have purpose, and sanctuary
-            should have soul. Our vision is a continuous, calculated transition
-            of energy - moving from the rich, seductive, dim-lit intimacy of our
-            premium contemporary lounges, through the crafted rituals of artisan
-            cafés, and into the ultimate, uninhibited freedom of our adult
-            boutique escape hotels.<br />
-            We build spaces where elegant order meets deep human desire. Every
-            detail is intentional. Everything is engineered to captivate.<br />
-            What begins today as a seductive modern contemporary lounge, will
-            evolve tomorrow into the permanent foundations of how we live,
-            travel, and escape.<br />
-            One layer, One City, One landmark at a time.
-          </p>
+          <div class="vision__text">
+            <p class="vision__text-item">
+              Arcadia Jade is a covert luxury environment.
+            </p>
+            <p class="vision__text-item">
+              We believe that true luxury should have purpose, and sanctuary
+              should have soul. Our vision is a continuous, calculated
+              transition of energy - moving from the rich, seductive, dim-lit
+              intimacy of our premium contemporary lounges, through the crafted
+              rituals of artisan cafés, and into the ultimate, uninhibited
+              freedom of our adult boutique escape hotels.
+            </p>
+            <p class="vision__text-item">
+              We build spaces where elegant order meets deep human desire. Every
+              detail is intentional. Everything is engineered to captivate.
+            </p>
+            <p class="vision__text-item">
+              What begins today as a seductive modern contemporary lounge, will
+              evolve tomorrow into the permanent foundations of how we live,
+              travel, and escape.
+            </p>
+            <p class="vision__text-item">
+              One layer, One City, One landmark at a time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -127,16 +140,15 @@
     <section class="photo">
       <div class="container photo__container">
         <img src="images/images/section-4.webp" alt="" class="photo__image" />
-      </div>
-    </section>
-    <section class="manifesto">
-      <div class="container manifesto__container">
-        <p class="manifesto__eyebrow">Vibrant · Seductive · Addictive</p>
-        <h2 class="manifesto__title">The Emerald Affair</h2>
-        <p class="manifesto__text">
-          A masterclass in modern indulgence, where every touchpoint is a ritual
-          and every moment is engineered to captivate.
-        </p>
+
+        <div class="container manifesto__container">
+          <p class="manifesto__eyebrow">Vibrant · Seductive · Addictive</p>
+          <h2 class="manifesto__title">The Emerald Affair</h2>
+          <p class="manifesto__text">
+            A masterclass in modern indulgence, where every touchpoint is a
+            ritual and every moment is engineered to captivate.
+          </p>
+        </div>
       </div>
     </section>
     <section class="growth">
@@ -193,6 +205,11 @@
           <div class="footer__phone">
             <p class="footer__phone-title">INQUIRIES</p>
             <div class="footer__phone-inner">
+              <img
+                class="footer__phone-icon"
+                src="images/icons/number.svg"
+                alt=""
+              />
               <a href="tel:+13433055887" class="footer__phone-link"
                 >1-343-305-5887</a
               >
