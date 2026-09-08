@@ -99,6 +99,8 @@ a {
 .header__content {
   max-width: 1628px;
   margin: 0 auto;
+
+  z-index: 5;
 }
 
 .header__title {
@@ -209,7 +211,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #fff;
+  color: #fffaf0;
   font-family: "Satoshi", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
@@ -623,7 +625,7 @@ a {
 }
 
 .growth__text {
-  color: #fff;
+  color: #fffaf0;
   text-align: center;
   font-family: Satoshi;
   font-size: 1.5rem;
@@ -647,7 +649,7 @@ a {
 }
 
 .footer__brand {
-  color: #fff;
+  color: #fffaf0;
   text-align: center;
   font-family: Branch;
   font-size: 6rem;
@@ -676,7 +678,7 @@ a {
 
 .footer__social-title,
 .footer__phone-title {
-  color: #fff;
+  color: #fffaf0;
   font-family: Branch;
   font-size: 1.25rem;
   font-style: normal;
