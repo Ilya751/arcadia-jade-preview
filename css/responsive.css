@@ -149,6 +149,12 @@
     margin-left: 0;
   }
 
+  .photo__image {
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
   .footer__bottom {
     flex-direction: column;
   }
@@ -169,7 +175,7 @@
     max-width: 260px;
   }
 
-    .header__title {
+  .header__title {
     font-size: 2.5rem;
     text-align: right;
   }
