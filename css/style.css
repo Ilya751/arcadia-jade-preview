@@ -68,7 +68,10 @@ a {
   opacity: 0.999;
   transform: translateZ(0);
 
-  z-index: 0;
+  /* debug */
+  position: fixed;
+  inset: 0;
+  z-index: 999;
 }
 
 .header__top {
