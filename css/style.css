@@ -67,11 +67,6 @@ a {
   filter: brightness(1.001);
   opacity: 0.999;
   transform: translateZ(0);
-
-  /* debug */
-  position: fixed;
-  inset: 0;
-  z-index: 999;
 }
 
 .header__top {
