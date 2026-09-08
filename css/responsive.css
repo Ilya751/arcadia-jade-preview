@@ -155,6 +155,18 @@
     margin-bottom: 3rem;
   }
 
+  .slogan__start {
+    font-size: 11px;
+  }
+
+  .slogan__end {
+    font-size: 28px;
+  }
+
+  .manifesto__eyebrow {
+    font-size: 10px;
+  }
+
   .footer__bottom {
     flex-direction: column;
   }

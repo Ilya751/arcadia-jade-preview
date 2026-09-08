@@ -38,6 +38,7 @@ a {
   padding: 0 20px 0 20px;
   position: relative;
   z-index: 1;
+  letter-spacing: -0.03em;
 }
 
 .header {
@@ -130,7 +131,7 @@ a {
   max-width: 1478px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10.13rem;
+  padding-top: 15.13rem;
   display: flex;
   gap: 2.69rem;
 }
@@ -145,6 +146,7 @@ a {
 }
 
 .vision__image {
+  position: relative;
   max-width: 53.0625rem;
   height: 33.5625rem;
   aspect-ratio: 117/74;
@@ -152,19 +154,43 @@ a {
 
 .vision__image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vision__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.7) 8%,
+      rgba(0, 0, 0, 0.25) 18%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at left center,
+      rgba(0, 0, 0, 0.45),
+      transparent 45%
+    );
 }
 
 .vision__eyebrow {
   color: #976a3f;
   font-family: "Satoshi", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.625rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.245rem;
   text-transform: uppercase;
   margin-top: 4.06rem;
-  margin-bottom: 0.44rem;
+  margin-bottom: 1.62rem;
 }
 
 .vision__title {
@@ -404,6 +430,7 @@ a {
 
   display: flex;
   flex-direction: column;
+  gap: 14px;
   align-items: center;
   text-align: center;
   height: auto;
@@ -418,22 +445,22 @@ a {
   color: #fffaf0;
   text-align: center;
   font-family: Satoshi;
-  font-size: 1.5rem;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100.21%;
-  letter-spacing: 0.15rem;
-  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
 }
 
 .slogan__end {
   color: #fffaf0;
   font-family: Branch;
-  font-size: 2.25rem;
+  font-size: 42px;
   font-style: normal;
   font-weight: 400;
   line-height: 100.21%;
-  letter-spacing: 0.225rem;
+  letter-spacing: 0.02rem;
   text-transform: capitalize;
 }
 
@@ -479,20 +506,34 @@ a {
 }
 
 .photo__image {
+  position: relative;
   width: 100%;
   max-width: 89.7rem;
   height: auto;
   margin-top: 6.5rem;
   margin-bottom: 14.3rem;
+  background-blend-mode: darken;
   z-index: 1;
+}
+
+.photo__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 45%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
 .manifesto__eyebrow {
   text-align: center;
   font-family: Branch;
-  font-size: 1.5rem;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1rem;
   letter-spacing: 0.15rem;
   margin-bottom: 2.25rem;
@@ -556,7 +597,13 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.79%, #060d0d 83.03%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 1) 75%,
+    #060d0d 100%
+  );
 
   z-index: -1;
 }
@@ -569,6 +616,7 @@ a {
   font-family: Branch;
   font-size: 2rem;
   font-style: normal;
+  letter-spacing: 0.25em;
   font-weight: 400;
   line-height: 1.5625rem;
   text-transform: uppercase;
@@ -583,7 +631,7 @@ a {
   font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: 0.105rem;
-  max-width: 81.6rem;
+  max-width: 750px;
   margin: 0 auto;
   padding-bottom: 5.31rem;
 }
@@ -618,10 +666,12 @@ a {
 
 .footer__social-title {
   text-align: left;
+  letter-spacing: 0.2em;
 }
 
 .footer__phone-title {
   text-align: right;
+  letter-spacing: 0.2em;
 }
 
 .footer__social-title,
@@ -670,7 +720,7 @@ a {
 .footer__divider {
   stroke-width: 0.5px;
   stroke: #fffaf0;
-  margin-bottom: 1rem;
+  margin-bottom: 36px;
 }
 
 .footer__bottom {
