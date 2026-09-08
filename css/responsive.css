@@ -186,4 +186,8 @@
   .slogan__container {
     height: 320px;
   }
+
+  .footer__brand {
+    font-size: 3rem;
+  }
 }
